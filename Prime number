@@ -1,0 +1,14 @@
+# Write a code to check if a number entered by the user is prime. Print True if prime and False if not prime.
+
+num = int(input("Enter a number: "))
+flag = False
+if num > 1:
+        for i in range (2, num):
+            if (num % i) == 0:
+                flag = True
+                break
+        if flag:
+            print(num, "is not a prime number")
+        else:
+            print(num, "is a prime number")
+    
